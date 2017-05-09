@@ -15,6 +15,19 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/Hibernate"/>
 	<classpathentry kind="lib" path="C:/Users/Sindhuja Reddy/Downloads/mysql-connector-java-5.1.40/mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sindhuja Reddy/.m2/repository/org/springframework/spring-beans/3.0.5.RELEASE/spring-beans-3.0.5.RELEASE.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.springframework"/>
+			<attribute name="maven.artifactId" value="spring-beans"/>
+			<attribute name="maven.version" value="3.0.5.RELEASE"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Sindhuja Reddy/Downloads/spring-orm-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sindhuja Reddy/Downloads/spring-aop-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sindhuja Reddy/Downloads/spring-jdbc-3.2.5.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Sindhuja Reddy/Downloads/Spring/springsource-tool-suite-3.8.3.RELEASE-e4.5.2-updatesite.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Sindhuja Reddy/Downloads/spring-dao-2.0.3.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

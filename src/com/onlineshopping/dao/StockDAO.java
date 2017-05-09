@@ -1,5 +1,8 @@
 package com.onlineshopping.dao;
 
-public class StockDAO extends HibernateDaoSupport {
+import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+
+public class StockDAO extends HibernateDaoSupport
+{
 
 }
