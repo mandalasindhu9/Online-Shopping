@@ -1,13 +1,14 @@
 package com.onlineshopping.dao;
 
 import org.hibernate.SessionFactory;
+import org.onlineshopping.model.CustomerDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 import org.springframework.stereotype.Repository;
 
-import com.onlineshopping.customer.*;
+import org.onlineshopping.model.*;
 
-@Repository("customer")
+@Repository
 public class CustomerDAO extends HibernateDaoSupport {
 
 	@Autowired

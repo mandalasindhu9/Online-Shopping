@@ -52,17 +52,18 @@
         <property name="hbm2ddl.auto">create</property>
 
         <!-- Names the annotated entity class -->
-        <mapping class="org.onlineshopping.address.AddressDetails"/>
-        <mapping class="org.onlineshopping.address.ZipDetails"/>
-        <mapping class="org.onlineshopping.backorder.BackOrderDetails"/>
-        <mapping class="org.onlineshopping.component.ComponentDetails"/>
-        <mapping class="org.onlineshopping.paymentmethod.PaymentMethodDetails"/>
-        <mapping class="org.onlineshopping.product.ProductComponentDetails"/>
-		<mapping class="org.onlineshopping.product.ProductDetails"/>
-		<mapping class="org.onlineshopping.shipmentorder.OrderProductDetails"/>
-		<mapping class="org.onlineshopping.shipmentorder.ShipmentOrderDetails"/>
-		<mapping class="org.onlineshopping.shipmentorder.TaxDetails"/>
-		<mapping class="org.onlineshopping.vendor.VendorDetails"/>
+        <mapping class="org.onlineshopping.model.CustomerDetails"/>
+        <mapping class="org.onlineshopping.model.AddressDetails"/>
+        <mapping class="org.onlineshopping.model.ZipDetails"/>
+        <mapping class="org.onlineshopping.model.BackOrderDetails"/>
+        <mapping class="org.onlineshopping.model.ComponentDetails"/>
+        <mapping class="org.onlineshopping.model.PaymentMethodDetails"/>
+        <mapping class="org.onlineshopping.model.ProductComponentDetails"/>
+		<mapping class="org.onlineshopping.model.ProductDetails"/>
+		<mapping class="org.onlineshopping.model.OrderProductDetails"/>
+		<mapping class="org.onlineshopping.model.ShipmentOrderDetails"/>
+		<mapping class="org.onlineshopping.model.TaxDetails"/>
+		<mapping class="org.onlineshopping.model.VendorDetails"/>
     </session-factory>
 
 </hibernate-configuration>

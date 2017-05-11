@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">  
+        <property name="driverClassName"  value="com.mysql.jdbc.Driver"></property>  
+        <property name="url" value="jdbc:mysql://localhost:3306/sample_ua?useSSL=false"></property>  
+        <property name="username" value="mandalasindhu"></property>  
+        <property name="password" value="root123"></property>  
+    </bean> 
+    
+   <bean id="sessionFactory" class="org.sprigframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+   <property name="dataSource" ref="dataSource"/>
+   <property name="packageToSee" value="org.onlineshopping.model"/>   
+   <property name="hibernateProperties">
+   <props>
+   
+   <prop key="dialect">org.hibernate.dialect.MySQLDialect</prop>
+   </props>
+   
+   </property>
+   
+   </bean>
+   
+   </beans>
