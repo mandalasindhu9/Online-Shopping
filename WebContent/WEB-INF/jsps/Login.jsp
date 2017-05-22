@@ -7,7 +7,22 @@
 <title>Login Page</title>
 </head>
 <body>
-<form method="POST" action="Home.jsp" >
+<script>
+function validate(){
+var username=document.form.user.value;
+var password=document.form.pass.value;
+if(username==""){
+ alert("Enter Username!");
+  return false;
+}
+if(password==""){
+ alert("Enter Password!");
+  return false;
+}
+return true;
+}
+</script>
+<form method="POST" action="Home.jsp" onsubmit="javascript:return validate();">
 <center>
 <table border="1" width="30%" cellpadding="3">
                 <thead>

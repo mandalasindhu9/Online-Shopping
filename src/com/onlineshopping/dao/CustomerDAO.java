@@ -19,9 +19,9 @@ public class CustomerDAO extends HibernateDaoSupport {
 		sessionFactory.getCurrentSession().saveOrUpdate(customer);
 	}
 
-	public int getCustomerDetails(int customer_id) {
+	public CustomerDetails getCustomerDetails(int customer_id) {
 
-		return ((CustomerDetails) sessionFactory.getCurrentSession()).getCustomer_id();
+		return  (CustomerDetails) sessionFactory.getCurrentSession().get(CustomerDetails.class, customer_id);
 	}
 
 	public void deleteCustomerDetails(CustomerDetails customer){

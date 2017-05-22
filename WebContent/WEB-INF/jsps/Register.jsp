@@ -7,7 +7,37 @@
 <title>Registration Page</title>
 </head>
 <body>
-<form method="POST" action="Register.jsp">
+<script>
+function validate(){
+var firstName=document.form.user.value;
+var lastName=document.form.user.value;
+var email=document.form.user.value;
+var username=document.form.user.value;
+var password=document.form.pass.value;
+if(firstName==""){
+	alert("Enter First Name!");
+	return false;	
+}
+if(lastName==""){
+	alert("Enter Last Name!");
+	return false;	
+}
+if(email==""){
+	alert("Enter Email!");
+	return false;	
+}
+if(username==""){
+ alert("Enter Username!");
+  return false;
+}
+if(password==""){
+ alert("Enter Password!");
+  return false;
+}
+return true;
+}
+</script>
+<form method="POST" action="Register.jsp" onsubmit="javascript:return validate();">
 <center>
             <table border="1" width="30%" cellpadding="5">
                 <thead>
